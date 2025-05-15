@@ -12,7 +12,7 @@ public class VariableNaming {
         카멜 표기법(단봉낙타 표기법) => lastName => 변수명, 메소드명
         5. 예약어 사용 불가(public, static, void, int, float, ....)
 
-
+         보통 boolean일때는 변수명 앞에 is나 flag를 사용함
          */
 
         String carBrandName = "KIA";
