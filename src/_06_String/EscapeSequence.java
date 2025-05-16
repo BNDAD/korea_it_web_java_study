@@ -40,6 +40,13 @@ public class EscapeSequence {
         c = '\'';
         System.out.println(c);
 
+        //문제
+        String id = "960910-1234567";
+        //출력을 960910-1까지만
+        System.out.println(id.substring(0, 8)); //첫번째 방법
+        System.out.println(id.substring(0, id.indexOf("-") + 2)); //두번째 방법
+
+
 
     }
 }
