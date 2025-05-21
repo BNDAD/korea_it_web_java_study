@@ -16,8 +16,7 @@ public class ElseIf {
             System.out.println("등급: B");
         } else if (avgScore >= 70) {
             System.out.println("등급: C");
-
-        } else {
+        } else{
             System.out.println("등급: D");
         }
         //앞에 참이 나온 조건이 있으면 뒤에는 다 무시
@@ -26,7 +25,7 @@ public class ElseIf {
         int age = 27;
         String gender = "남성";
         if (age >= 20) {
-            if (gender.equals("남성")) {
+            if(gender.equals("남성")) {
                 System.out.println("성인 남성입니다.");
             } else {
                 System.out.println("성인 여성입니다.");
@@ -35,5 +34,6 @@ public class ElseIf {
             System.out.println("미성년자 입니다.");
         }
     }
+
 
 }
