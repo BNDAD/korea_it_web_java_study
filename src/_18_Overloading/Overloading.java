@@ -21,22 +21,32 @@ public class Overloading {
         return result;
     }
     public static void printInfo(String name) {
-        System.out.println(name);
+        System.out.println("이름은 " + name);
 
     }
 
     public static void printInfo(String name, int age) {
-        System.out.print(name + " ");
-        System.out.println(age);
+        System.out.println("이름은 " + name + "이고 " + "나이는 " + age + "입니다.");
+
 
     }
 
     public static void printInfo(String name, int age, String email) {
-        System.out.print("이름은 " + name + "이고 ");
-        System.out.print("나이는 " + age + "이고 ");
-        System.out.println("이메일은 " + email + "입니다.");
+        System.out.println("이름은 " + name + "이고 " + "나이는 " + age + "이고 " + "이메일은 " + email + "입니다.");
     }
 
+    public static void add(int a, int b) {
+        System.out.println(a + "+" + b + "=" + (a + b));
+
+    }
+    public static void add(double a, double b) {
+        System.out.println(a + "+" + b + "=" + (a + b));
+
+    }
+    public static void add(String strNum1, String strNum2) {
+        System.out.println(strNum1 + "+" + strNum2 + "=" + (Integer.parseInt(strNum1) + Integer.parseInt(strNum2)));
+
+    }
     public static void main(String[] args) {
         //메소드 오버로딩
         //같은 이름의 메소드를 여러 개 선언
@@ -46,13 +56,24 @@ public class Overloading {
         System.out.println(getPower(2.3));
         System.out.println(getPower("4"));
         System.out.println(getPowerByExp(2, 4));
+        System.out.println();
 
         //문제
         // 메소드 이름 printInfo()
         // 문자열 이름만 전달 => 이름을 출력
         // 문자열 이름, 정수, 나이 전달 => 이름 나이 출력
         // 문자열 이름, 정수 나이 , 문자열 이메일 => 이름 나이 이메일 출력해
+        printInfo("김성엽");
+        printInfo("김성엽", 30);
         printInfo("김성엽", 30, "ral7057@naver.com");
+        System.out.println();
+        //메소드 이름 add()
+        //int와 int 덧셈
+        //double과 double 덧셈
+        //문자열숫자와 문자열숫자 덧셈
+        add(3, 3);
+        add(1.2, 3.4);
+        add("4", "5");
 
     }
 }
